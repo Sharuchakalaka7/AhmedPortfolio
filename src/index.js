@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+console.log("starting index.js");
 const content = ReactDOM.createRoot(document.getElementById('content'));
 content.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+console.log("done index.js");
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
