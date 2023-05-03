@@ -1,0 +1,1 @@
+console.log('static index.js triggered - need to refresh to live page');
