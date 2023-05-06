@@ -1,3 +1,15 @@
+/** Overall App Styles **/
 .App {
-  text-align: center;
+	text-align: center;
+	display: flex;
 }
+
+/** NavBar Styles **/
+.navbar {
+	text-align: left;
+	width: 5%;
+	height: 100%;
+	background-color: black;
+}
+
+/** Footer Styles **/
