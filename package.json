@@ -1,7 +1,7 @@
 {
 	"name": "ahmedportfolio",
 	"version": "0.1.0",
-	"homepage": "https://sharuchakalaka7.github.io/AhmedPortfolio",
+	"homepage": "https://ahmedshahriar.ca",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
