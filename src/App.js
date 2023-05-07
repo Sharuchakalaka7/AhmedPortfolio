@@ -1,46 +1,20 @@
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NavBar from './Navbar.js';
 import HomePage from './Homepage.js';
+import Footer from './Footer.js';
 import './App.css';
 
-function NavBar() {
-	const [navBarExpand, setNavBarExpand] = useState(false);
-
-	const navButton = <button onClick={handleClick}><FontAwesomeIcon icon="fa-solid fa-bars" /></button>
-
-	function handleClick(e) {
-		setNavBarExpand(!navBarExpand);
-	}
-
-	return (
-		<div className="navbar">
-			{navButton}
-		</div>
-	);
-}
-
-function Footer() {
-	return (
-		<div className="footer">
-			This is the footer content
-		</div>
-	);
-}
-
-function App(props) {
+function App() {
 	return (
 		<div className="root-wrapper">
 			<div className="grid-container">
-				<div className="grid-element">
-					<NavBar />
-				</div>
-				<div className="grid-element">
-					<HomePage />
-				</div>
+				<NavBar />
+				<HomePage />
 			</div>
 			<Footer />
 		</div>
 	);
 }
+
+
 
 export default App;

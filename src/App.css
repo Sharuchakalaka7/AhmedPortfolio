@@ -1,31 +1,12 @@
-/** NavBar Styles **/
-.navbar {
-	text-align: left;
-	padding: 10px;
-	background-color: black;
-	color: cyan;
+body {
+	background-color: rgb(128, 128, 128)
 }
-
-
-
-
-/** Footer Styles **/
-.footer {
-	text-align: center;
-	width: 100%;
-	padding: 30px;
-	color: yellowgreen;
-}
-
-
-
-
-/** General App Styles **/
 .root-wrapper {
 	width: 100%;
+	height: 100%;
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 9fr;
-	grid-gap: 2%;
+	grid-template-columns: 1fr 30fr;
+	grid-auto-rows: 1fr;
 }
