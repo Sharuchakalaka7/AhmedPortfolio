@@ -30,8 +30,14 @@ function Footer() {
 function App(props) {
 	return (
 		<div className="root-wrapper">
-			<NavBar />
-			<HomePage />
+			<div className="grid-container">
+				<div className="grid-element">
+					<NavBar />
+				</div>
+				<div className="grid-element">
+					<HomePage />
+				</div>
+			</div>
 			<Footer />
 		</div>
 	);

@@ -1,15 +1,31 @@
-/** Overall App Styles **/
-.App {
-	text-align: center;
-	display: flex;
-}
-
 /** NavBar Styles **/
 .navbar {
 	text-align: left;
-	width: 5%;
-	height: 100%;
+	padding: 10px;
 	background-color: black;
+	color: cyan;
 }
 
+
+
+
 /** Footer Styles **/
+.footer {
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+	color: yellowgreen;
+}
+
+
+
+
+/** General App Styles **/
+.root-wrapper {
+	width: 100%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	grid-gap: 2%;
+}
