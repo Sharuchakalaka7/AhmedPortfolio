@@ -1,4 +1,13 @@
 .content-wrapper {
-	color: red;
 	font-size: x-large;
+}
+.section {
+	background-color: #1e90ff;
+	padding: 5%;
+	min-height: 400px;
+}
+#home-section-intro {
+	background-image: url('https://i.pinimg.com/originals/5c/b3/f7/5cb3f72eb1a03628ceadfc3ac704d11e.gif');
+	background-size: 100%;
+	opacity: 0.8;
 }

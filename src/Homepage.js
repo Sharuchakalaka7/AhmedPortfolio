@@ -1,21 +1,17 @@
 import './Homepage.css'
 
-function HomePage(props) {
+function IntroSection({ className, id }) {
+	return (
+		<div className={className} id={id}>
+			<h1 className="section-title">Welcome</h1>
+		</div>
+	);
+}
+
+function HomePage() {
 	return (
 		<div className="content-wrapper" id="home-content-wrapper">
-			This is the Home page content<br />
-			Another line<br />
-			Wait... <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
-			ANOTHER LINE <br />
+			<IntroSection className="section home-section" id="home-section-intro" />
 		</div>
 	);
 }

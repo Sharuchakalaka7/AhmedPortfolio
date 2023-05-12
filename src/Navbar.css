@@ -1,17 +1,15 @@
 .navbar {
-	background-color: rgb(50, 50, 50);
+	background-color: rgb(40, 40, 40);
 	text-align: left;
 }
 
 .navbar-button {
 	background-color: rgba(0,0,0,0);
-	color: whitesmoke;
 	border: none;
 	margin: 10px;
 }
 
 .navbar-link * {
-	color: whitesmoke;
 	text-align: left;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -20,5 +18,4 @@
 }
 .navbar-link:hover {
 	background-color: rgb(160,160,160);
-	color: white;
 }

@@ -1,7 +1,12 @@
 .footer {
 	background-color: rgb(16,16,16);
-	color: whitesmoke;
-	width: 100%;
+	text-align: left;
+	padding: 2% 15%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: max-content;
+	gap: 40px;
+}
+.footer-column {
 	padding: 30px;
-	text-align: center;
 }
