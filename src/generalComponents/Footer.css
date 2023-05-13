@@ -3,10 +3,20 @@
 	text-align: left;
 	padding: 2% 15%;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: max-content;
 	gap: 40px;
 }
+
 .footer-column {
 	padding: 30px;
+}
+.footer-column-heading {
+	color: #1e90ff;
+	text-transform: uppercase; 
+}
+
+.footer-link * {
+	color: #ccccff;
+	text-decoration: none;
 }

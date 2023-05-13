@@ -1,6 +1,8 @@
 .navbar {
 	background-color: rgb(40, 40, 40);
 	text-align: left;
+	position: sticky;
+	top: 0;
 }
 
 .navbar-button {

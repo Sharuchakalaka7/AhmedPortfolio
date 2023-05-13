@@ -2,7 +2,7 @@
 	color: #f2f2f2;
 }
 body {
-	background-color: rgb(128, 128, 128)
+	background-color: black;
 }
 .root-wrapper {
 	width: 100%;
@@ -12,4 +12,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 30fr;
 	grid-auto-rows: 1fr;
+}
+.root-ribbon {
+	background-color: #0c2fa3;
+	height: 20px;
 }
