@@ -1,4 +1,4 @@
-import './Homepage.css'
+import './Content.css'
 
 function IntroSection({ className, id }) {
 	return (
@@ -8,7 +8,7 @@ function IntroSection({ className, id }) {
 	);
 }
 
-function HomePage() {
+function Content() {
 	return (
 		<div className="content-wrapper" id="home-content-wrapper">
 			<IntroSection className="section home-section" id="home-section-intro" />
@@ -16,4 +16,4 @@ function HomePage() {
 	);
 }
 
-export default HomePage;
+export default Content;

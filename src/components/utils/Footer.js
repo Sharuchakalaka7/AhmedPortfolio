@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import PagesContext from '../contexts/PagesContext';
-import PortfolioContext from '../contexts/PortfolioContext';
-import SocialsContext from '../contexts/SocialsContext';
+import PagesContext from '../../contexts/PagesContext';
+import PortfolioContext from '../../contexts/PortfolioContext';
+import SocialsContext from '../../contexts/SocialsContext';
 import './Footer.css';
 
 function Footer() {
