@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import PagesContext from '../../contexts/PagesContext';
 import PortfolioContext from '../../contexts/PortfolioContext';
 import SocialsContext from '../../contexts/SocialsContext';
@@ -6,11 +8,14 @@ import './Footer.css';
 
 function Footer() {
 	return (
-		<div className="footer">
-			<FooterColumn heading="Pages" context={PagesContext} />
-			<FooterColumn heading="Projects" context={PortfolioContext} />
-			<FooterColumn heading="Socials" context={SocialsContext} />
-		</div>
+		<Container className="footer" fluid>
+			<Row>
+				<FooterColumn heading="Pages" context={PagesContext} />
+				<FooterColumn heading="Projects" context={PortfolioContext} />
+				<FooterColumn heading="Socials" context={SocialsContext} />
+				<FooterForm />
+			</Row>
+		</Container>
 	);
 	// add email subscriber list
 }
@@ -18,20 +23,22 @@ function Footer() {
 function FooterColumn({ heading, context }) {
 	const { pages } = useContext(context);
 	return (
-		<div className="footer-column">
-			<h2 className="footer-column-heading">
-				{heading}
-			</h2>
-			{pages.map((page) => <FooterLink title={page.title} link={page.link} key={page.title} />)}
-		</div>
+		<Col>
+			<h2 className="footer-column-heading">{heading}</h2>
+			{pages.map((page) => (
+				<h5 className="footer-link" key={page.title}>
+					<a href={page.link}>{page.title}</a>
+				</h5>
+			))}
+		</Col>
 	);
 }
 
-function FooterLink({ title, link }) {
+function FooterForm() {
 	return (
-		<h5 className="footer-link">
-			<a href={link}>{title}</a>
-		</h5>
+		<Col>
+			<h2 className="footer-column-heading">Stay in Touch</h2>
+		</Col>
 	);
 }
 
