@@ -3,11 +3,7 @@
 	padding: 3% 5%;
 }
 
-.footer-column-heading {
-	color: #1e90ff;
-}
-
-.footer-link * {
-	color: #ccccff;
-	text-decoration: none;
+.footer-social {
+	max-width: 30px;
+	max-height: 30px;
 }

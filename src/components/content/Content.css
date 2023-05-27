@@ -1,16 +1,9 @@
-.content-wrapper {
-	font-size: x-large;
-}
 .section {
-	background-color: #1e90ff;
 	min-height: 100vh;
-}
-
-.section-title {
 	margin: none;
+	padding: none;
 }
 
-#home-section-intro {
-	background-image: url('https://static.wixstatic.com/media/b5af25_d0fbb09647b44e3e812d83d9a655e426~mv2.gif');
-	background-size: cover;
+.section-col {
+	margin: 5%;
 }

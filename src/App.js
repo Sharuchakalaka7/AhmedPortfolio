@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
 	return (
-		<div className="root-wrapper containter-fluid">
+		<div className="containter-fluid">
 			<Contexts>
 				<NavBar />
 				<Content />

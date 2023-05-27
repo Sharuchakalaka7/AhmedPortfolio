@@ -1,20 +1,19 @@
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
+import { Navbar, Image } from 'react-bootstrap/';
 
 import './Navbar.css';
 
 function NavBar() {
 	return (
 		<Navbar bg="dark" sticky="top">
-			<Container>
-				<Navbar.Brand href=".">
-					<img
-						src="/images/sample-logo.jpg"
-						className="d-inline-block align-top"
-						alt="Ahmed Shahriar Logo"
-					/>
-				</Navbar.Brand>
-			</Container>
+			<Navbar.Brand href=".">
+				<Image
+					src="/images/sample-logo.jpg"
+					width="30"
+					height="30"
+					className="d-inline-block align-top"
+					alt="Ahmed Shahriar Logo"
+				/>
+			</Navbar.Brand>
 		</Navbar>
 	);
 }

@@ -1,17 +1,40 @@
-import './Content.css'
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import './Content.css';
 
-function IntroSection({ className, id }) {
+function Content() {
 	return (
-		<div className={className} id={id}>
-			<h1 className="section-title">Welcome</h1>
+		<div className="content-wrapper">
+			<IntroSection />
 		</div>
 	);
 }
 
-function Content() {
+function IntroSection() {
 	return (
-		<div className="content-wrapper" id="home-content-wrapper">
-			<IntroSection className="section home-section" id="home-section-intro" />
+		<Section color="#091752">
+			<Row>
+				<Col className="section-col">
+					<Image
+						src="/images/profile.jpg"
+						className="d-inline-block align-top"
+						alt="Ahmed Shahriar Profile Photo"
+						fluid roundedCircle
+					/>
+				</Col>
+				<Col className="section-col">
+					<h1>Ahmed Shahriar.</h1>
+				</Col>
+			</Row>
+		</Section>
+	);
+}
+
+function Section({ children, color }) {
+	return (
+		<div className="section" style={{ backgroundColor: color }}>
+			<Container fluid>
+				{children}
+			</Container>
 		</div>
 	);
 }

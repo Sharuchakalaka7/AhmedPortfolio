@@ -1,45 +1,36 @@
-import { useContext } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+//import { useContext } from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
-import PagesContext from '../../contexts/PagesContext';
-import PortfolioContext from '../../contexts/PortfolioContext';
-import SocialsContext from '../../contexts/SocialsContext';
+//import PagesContext from '../../contexts/PagesContext';
+//import PortfolioContext from '../../contexts/PortfolioContext';
+//import SocialsContext from '../../contexts/SocialsContext';
 import './Footer.css';
 
 function Footer() {
+	//const { socialPages } = useContext(SocialsContext);
+
 	return (
 		<Container className="footer" fluid>
 			<Row>
-				<FooterColumn heading="Pages" context={PagesContext} />
-				<FooterColumn heading="Projects" context={PortfolioContext} />
-				<FooterColumn heading="Socials" context={SocialsContext} />
-				<FooterForm />
+				<Col>
+					<SocialIcon title="LinkedIn" img="/images/linkedin.png" />
+				</Col>
 			</Row>
 		</Container>
 	);
-	// add email subscriber list
 }
 
-function FooterColumn({ heading, context }) {
-	const { pages } = useContext(context);
+function SocialIcon({ title, img, link }) {
 	return (
-		<Col>
-			<h2 className="footer-column-heading">{heading}</h2>
-			{pages.map((page) => (
-				<h5 className="footer-link" key={page.title}>
-					<a href={page.link}>{page.title}</a>
-				</h5>
-			))}
-		</Col>
-	);
-}
-
-function FooterForm() {
-	return (
-		<Col>
-			<h2 className="footer-column-heading">Stay in Touch</h2>
-		</Col>
-	);
+		<div className="footer-social">
+			<Image
+				src={img}
+				className="d-inline-block align-top"
+				alt={title + " Logo"}
+				fluid
+			/>
+		</div>
+	)
 }
 
 export default Footer;
