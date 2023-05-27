@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import { TypeAnimation } from 'react-type-animation';
 import './Content.css';
 
 function Content() {
@@ -10,9 +11,13 @@ function Content() {
 }
 
 function IntroSection() {
+	// navy blue color: #091752
 	return (
-		<Section color="#091752">
+		<Section color="black" id="home">
 			<Row>
+				<HighlightTextCol title="Hi! I'm Ahmed Shahriar." linktext="See what I do" href="#projects">
+					I am an aspiring software engineer finding my place in the tech world!
+				</HighlightTextCol>
 				<Col className="section-col">
 					<Image
 						src="/images/profile.jpg"
@@ -21,21 +26,39 @@ function IntroSection() {
 						fluid roundedCircle
 					/>
 				</Col>
-				<Col className="section-col">
-					<h1>Ahmed Shahriar.</h1>
-				</Col>
 			</Row>
 		</Section>
 	);
 }
 
-function Section({ children, color }) {
+function Section({ children, color, id }) {
 	return (
-		<div className="section" style={{ backgroundColor: color }}>
+		<div className="section" id={id} style={{ backgroundColor: color }}>
 			<Container fluid>
 				{children}
 			</Container>
 		</div>
+	);
+}
+
+function HighlightTextCol({ children, title, linktext, href }) {
+	return (
+		<Col className="section-col">
+			<TypeAnimation
+				className="highlight-title display-2"
+				sequence={[
+					200,
+					title
+				]}
+				speed={30}
+				wrapper="h1"
+				cursor={false}
+			/>
+			<h4 className="highlight-caption">{children}</h4>
+			<h4 className="highlight-link">
+				<a href={href}>{"--> " + linktext}</a>
+			</h4>
+		</Col>
 	);
 }
 

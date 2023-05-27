@@ -6,19 +6,19 @@ export function PagesProvider({ children }) {
 	const [pages, setPages] = useState([
 		{
 			title: "Home",
-			link: "#"
+			link: "#home"
+		},
+		{
+			title: "Projects",
+			link: "#projects"
 		},
 		{
 			title: "About",
-			link: "#"
-		},
-		{
-			title: "Portfolio",
-			link: "#"
+			link: "#about"
 		},
 		{
 			title: "Contact",
-			link: "#"
+			link: "#contact"
 		}
 	]);
 
